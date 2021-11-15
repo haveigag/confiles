@@ -152,3 +152,10 @@ hi Search guibg=Yellow guifg=Black
 hi Search cterm=NONE ctermbg=Cyan ctermfg=Black
 
 colorscheme idle
+
+" Enable cursor line position tracking:
+:set cursorline
+" Remove the underline from enabling cursorline:
+:highlight clear CursorLine
+" Set line numbering to red background:
+:highlight CursorLineNR ctermbg=blue ctermfg=Black
