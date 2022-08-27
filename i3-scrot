@@ -41,7 +41,7 @@ case "$1" in
 		;;
 	--desk-to-clipboard|-dc|$NULL)
 		cd $scrot_dir
-	  scrot -e 'xclip -selection clipboard -t image/png -i $f && rm $f' &&
+		scrot -e 'xclip -selection clipboard -t image/png -i $f && rm $f' &&
 		sleep 1 &&
 		notify-send "screenshot has been copied to clipboard"
 		;;
